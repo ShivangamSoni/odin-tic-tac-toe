@@ -12,7 +12,37 @@
   </head>
   <body>
     <main class="main">
-      <div class="gameBoard"></div>
+      <h2 id="currentPlayer"></h2>
+      <div id="gameBoard"></div>
     </main>
+
+    <div id="splashScreen">
+      <h1>Welcome to a Game of Tic-Tac-Toe</h1>
+      <button id="startGame" class="btn">Play</button>
+      <p id="result"></p>
+
+      <details id="settings">
+        <summary>Settings</summary>
+        <label id="AiCheck">
+          <input type="checkbox" id="vsAI" />
+          <span>Player vs AI</span>
+        </label>
+
+        <!-- <select id="AiLevel">
+          <option value="Easy" selected>Easy</option>
+          <option value="Impossible">Impossible</option>
+        </select> -->
+
+        <label>
+          <span>Player 1 Name</span>
+          <input type="text" placeholder="Player 1 Name" value="Player 1" id="player1Input" />
+        </label>
+
+        <label>
+          <span>Player 2 Name</span>
+          <input type="text" placeholder="Player 2 Name" value="Player 2" id="player2Input" />
+        </label>
+      </details>
+    </div>
   </body>
 </html>
